@@ -19,11 +19,6 @@ Hours Spent:
 
 ### Collaboration
 
-People consulted:
-- CS 290 Staff
-    - Professor Duvall
-    - Dennis Quan
-
 Resources used:
 - See welcome page for a list of sources, assets, and attributions
 
@@ -95,14 +90,4 @@ Bugs, Notes, and Considerations:
 - The process of analyzing Tweets is complex. I need to fetch the Tweets, and then send each one through the Watson API. This means calling the Watson API many times, resulting 
 in a latency that can be viewed on the frontend. I made sure to allow for other frontend interaction while the analyses are loading, but I would have liked to find a better
 solution and reduce this latency. 
-    - When refreshing the sentiment analysis for a given player card, often times the score will change significantly. This is in part due to an influx of new tweets, 
-    but if I were able to send all 100 of the allowed most recent Tweets through the Watson API (if not for the huge wait time this would cause), I think the analyses would 
-    be more consistent and telling. 
-- Right now, there is an odd CORS error that sometimes appears when running the sentiment analysis. I'm not sure why this is as it only happens sometimes. Everything else
-works fine, and this error never occurs when running locally. I've tried debugging this for a while and haven't found a consistent solution. If this occurs when using the page,
-please refresh the page and try again. 
-
-
-### Impressions
-- Overall, this project had many many peices and definitely took a great deal of time, but it was very satisfying to create a real website that is both deployed and 
-using database services. 
+    - When refreshing the sentiment analysis for a given player card, often times the score will change significantly. This is in part due to an influx of new tweets, but if I were able to send all 100 of the allowed most recent Tweets through the Watson API (if not for the huge wait time this would cause), I think the analyses would be more consistent and telling. 
