@@ -2,8 +2,7 @@
 
 This project combines NBA, Twitter, and IBM Watson APIs to contrast NBA statistics with Twitter Sentiment analysis for players. 
 
-## Name: 
-Arjun Peri
+## Arjun Peri
 
 ### Timeline
 
