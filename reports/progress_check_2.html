@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Progress1</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h1 id="progress-report-2">Progress Report 2</h1>
+<h2 id="Video">Demo Video</h2>
+<ul>
+    <li>Click <a href="https://duke.zoom.us/rec/share/n4F6WhROSyvq6kGOdpIR2WKWOu5bf5mabO-FPYdaEAxioAHWFpP8nbc_8qO7-uRb.TLmMjS7NxWuDTYa2?startTime=1618605782000">here</a> to see my demo video for update 2!</li>
+</ul>
+<h2 id="Video">Deployed Backend</h2>
+<ul>
+    <li>Click <a href="https://arcane-thicket-82518.herokuapp.com/git">here</a> to see my deployed backend server! There are a few different API calls and methods shown 
+    on the server currently, not all of which will actually be used. I have shown the result of getting tweets for the search term
+    "Kevin Durant," as well as the sentiment score for each of those tweets. Additonally, I have shown the result of calling the Watson 
+    API on a concatenated string version of all the Tweet text, as well as the result of averaging the results of the Watson API for each 
+    individual tweet. A more detailed explanation and comparison of all the methods/data is provided in the demo video. </li>
+</ul>
+<h2 id="data">Data</h2>
+<ul>
+<li>This week, I started working with the IBM Watson API and integrating it with the Twitter API. My webpage uses the Watson API to process text and return a sentiment analysis. 
+    Right now, I am running this sentiment analysis for each tweet that is returned for a user's query, I am averaging the results, and I am returning this average. 
+    <a href="./progress2_json/KD.json"> Here </a> is an example of the JSON data containing 
+    the average sentiment score for the tweets returned for a search of "Kevin Durant." The Watson API returns a value from -1 to 1, with -1 being the most negative and 
+    1 being the most positive. As you can see, the tweets surrounding Kevin Durant (one of the more disliked players in the NBA) are on the negative side.
+<li>One issue that I encountered was that many of the tweets returned from the Twitter API were retweets, and they were formatted in a way that cannot be accurately processed by the Watson API. <a href="./progress2_json/manyRetweets.json"> Here</a> is an example of the JSON data returned by the Twitter API that shows a plethora of retweets, some of which are for the same tweet. I was able to fix this issue by removing the link in each tweet text that references the retweet, as this was what caused errors for Watson. In the future, I might even add a feature that enables users to choose if they want to include retweets in the data they are shown.</li>
+<li>Moreover, the raw Twitter data I was receiving included tweets from all over the world, meaning the text was in a number of different languages, not all of which are supported by Watson (explained in further detail later). To fix this, I had to specify that the Watson API should only accept text in english.</li>
+</ul>
+<h2 id="progresss">Progresss</h2>
+<ul>
+<li>This week, I met my goal of being able to sucessfully work with all three of my API’s and integrate them where possible, completing most fo the hard work that needs to be done on the backend.</li>
+<li>With the Twitter API, I was able to add some filtering techniques so that the text I send to the Watson API is processed accurately.</li>
+<li>With the Watson API, I was able to find the parameters I needed to get sentiment data relevant to my project. One issue that I am currently running into is that I am calling the API on each tweet in my array, so there is a long wait time to actually get the results of the analysis. I attempted to instead concatenate all the tweets into just one large string and run the API call on just that overall string, and this dramatically decreased the latency. However, I found that the results were actually different between the two methods, so I need to go in and see why this is and what the best way is to decrease the wait time (if any).</li>
+</ul>
+<h2 id="concerns">Concerns</h2>
+<ul>
+<li>Other than the wait time issue described above, there are a few small kinks that I need to work out with the Watson/Twitter API integration scheme.</li>
+<li>For example, in addition to returning the sentiment score, I initially also wanted to return the emotion data that the Watson API provides to give a more detailed analysis of the text. <a href="./progress2_json/tweetAnalysis.json"> Here</a>  is an example of JSON data that is returned when I analyze the text “I am feeling very happy today!” which includes emotion data.</li> 
+<li>This would certainly be valuable informtation to provide to users, but the issue is this data can’t be processed for all text. Watson is very particular about which features are supported for certain languages, and for most languages other than English, features other than just the sentiment score are not supported. One solution would be to check the language of the text against a list of supported languages for a certain feature, but this is something I have yet to implement.</li>
+<li>One larger issue that I’ve run into is not with the way I am implementing the APIs, but rather the nature of the way they work. Specifically, the sentiment score from the Watson API is not always as telling and accurate as I would have hoped. For example,  for a sentence like “Lebron is better than Jordan,” <a href="./progress2_json/lebronJordan.json">here</a> is the sentiment analysis JSON data that is returned.
+As you can see, for a statement that is seemingly praising Lebron James, the Watson API classifies this as very negative. To fix this, I can play around with some of the parameters like important keywords to tweak the results and get them more in line with the expected values.</li>
+</ul>
+<h2 id="learning">Learning</h2>
+<ul>
+<li>Over the course of the last week, one key takeaway was the fact that there are numerous factors that must be taken into consideration when integrating different APIs together. Initially, I beleived the process of using the Twitter and Watson APIs in tandem to be as simple as just sending text from to the other. In reality, I failed to consider how the Twitter text results would be returned, and how compatible (or not) this format was with what the Watson API actually accepts. Thus, there was a lot of extra filtering and processing work that was needed for the two APIs to work togehter properly, and this is definietly something I overlooked when plannning out my work.</li>
+</ul>
+<h2 id="plan">Plan</h2>
+<ul>
+<li>For the next project deadline, I want to start working with the frontend and actually displaying everything that is being received on the backend. This will involve thinkking about the best ways to actually visualize the data, which is something that the TA told me would be one of the bigger decisions in this project during my intial plan feedback. Additionally, this will require implementing certain features like a search bar to allow users to specify what data they want to see, and thus I need to formulate a strategy for how and when the frontend and backend need to communicate.</li>
+<li>Something that I was not able to get to this week was the authorization features, so I need to keep this in the back of my mind as I start implementing the frontend. As previously stated, figuring out where authorization fits in to the broader scope of the project will likely be easier once the frontend is implemented to some degree.</li>
+<li>Something else that I need to be thinking about as I start working on the frontend is the use of database and storage. One idea I have is to allow users to store certain pieces of data that they discover, and I could potentially use storage to allow this and enable any user to see another user’s saved data. This could either be stored as images or via some other format.</li>
+</ul>
+<h2 id="summary">Summary</h2>
+<ul>
+<li>This week, I was able to succesfully implement the inner workings of my APIs and their integration. One of my biggest concerns was not being able to use the APIs as intended in my plan, and though the learning curve was certainly large for each one, most of the the hurdles I encountered were overcome.</li>
+<li>I have described some of the issues that I still need to fix, but for the most part, there is a solution to all of these and they are minor to the point where the overall feasability of my project is not compromised.</li>
+</ul>
+</div>
+</body>
+
+</html>

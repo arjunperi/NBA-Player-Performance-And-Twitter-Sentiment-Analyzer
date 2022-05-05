@@ -1,0 +1,13 @@
+{
+    "sentiment": {
+    "score": 0.986295,
+    "label": "positive"
+    },
+    "emotion": {
+    "sadness": 0.062022,
+    "joy": 0.857981,
+    "anger": 0.013453,
+    "fear": 0.039234,
+    "disgust": 0.017433
+    }
+}

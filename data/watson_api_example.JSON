@@ -1,0 +1,116 @@
+[
+    {
+    "sentiment": {
+    "score": 0.883564,
+    "label": "positive"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0,
+    "label": "neutral"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0.534205,
+    "label": "positive"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.90199,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.289999,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.386679,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.827215,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.90199,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.90199,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.923695,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0.786515,
+    "label": "positive"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0.840709,
+    "label": "positive"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.68584,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0.786515,
+    "label": "positive"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0,
+    "label": "neutral"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0,
+    "label": "neutral"
+    }
+    },
+    {
+    "sentiment": {
+    "score": -0.90199,
+    "label": "negative"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0,
+    "label": "neutral"
+    }
+    },
+    {
+    "sentiment": {
+    "score": 0,
+    "label": "neutral"
+    }
+    }
+    ]

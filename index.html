@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- always put your name in your work -->
+    <meta name="author" content="Arjun Peri">
+    <!-- always label your name with a title -->
+    <title>CompSci 290, Spring 2021 : Final Project Welcome Page</title>
+    <!-- scale page to fit entire screen, so it properly fills non-desktop devices -->    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- DEV-only for easier refreshing: stop the web browser from ever caching this page or its images -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <!-- load required Bootstrap and BootstrapVue CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+    <!-- load Vue followed by BootstrapVue -->
+    <script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <!-- load the following for BootstrapVueIcons support -->
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.js"></script>
+    <!-- style for this page -->
+    <link rel="stylesheet" href="./src/ui//src/style.css">
+</head>
+
+<body>
+    <div class = "app">
+        <br>
+        <header>
+            <h1><a href="./dist/index.html"> NOTORIOUS.</a></h1>
+            <h6>(Click the link to visit main site)</h6>
+        </header>
+        <hr>
+        <br>
+        <div>
+            <h3>
+                Project Overview
+            </h3>
+            <br>
+            <div class = "welcome">
+                <div>
+                    <ul>
+                        <li>
+                            My web app, Notorious, aims to compare and constrast NBA statistics with discussion and opinion on Twitter. 
+                        </li>
+                        <li>
+                            Twitter hosts an expansive community of NBA 
+                            fans and experts, and there is non-stop discourse surrounding all the players in the league. Notorious allows users to view a sentiment analysis of the Tweets about
+                            a given player at a certain point in time, all while viewing that same player's most updated statistics for refrence.
+                        </li>
+                        <li>
+                            Thus, by enabling users to compare on-the-court 
+                            performance metrics with an analysis of how positive or negative the Tweets surronding a player are, Notorious digs into the question of how/if Twitter and the 
+                            proliferation of social media affects NBA atheletes.
+                        </li>
+                        <li>
+                            Do the players with the best stats have the best sentiment score and vice versa, are there certain exceptions to the 
+                            rule, or is NBA Twitter so brutal in their opinions that the on-court performance of a player holds little influence? Head over to the website to find out for yourself!
+                        </li>
+                    </ul>
+                      
+                </div>
+            </div>
+            <hr>
+            <br>
+            <h3>Methods</h3>
+                <br>
+                <div class = "welcome">
+                    <div>
+                        <ul>
+                            <li>
+                                The web app is designed to have a responsive frontend (Vue.js and hosted on Gitlab) that interacts with a backend server (Heroku) as well as a Realtime Database (Firebase) that 
+                                hosts information about all of the users. Using the database not only allows for persistence of data, but also sharing of data.
+                            </li>
+                            <li>
+                                Users can log in via Google OAuth, which then enables them to 
+                                interact with the database and experiment with the APIs working in the backend. 
+                            </li>
+                            <li>
+                                On the Create page, users can search for all NBA players and create player cards 
+                                for players of their choice. The player cards contain the most updated statistical averages from that player's career.
+                            </li>
+                            <li>
+                                Notorious uses 
+                                rapidapi's <a href="https://rapidapi.com/api-sports/api/api-nba/details">API-NBA</a> to search for NBA players and retreive their stats. Users can also choose to 
+                                display a sentiment analysis from the Tweets about that player on a given player card. Notorious uses the <a href="https://developer.twitter.com/en/docs/twitter-api">Twitter API </a>
+                                up to 100 of the most recent tweets about a player, runs each Tweet through IBM Watson's <a href="https://cloud.ibm.com/apidocs/natural-language-understanding">Natural Language Understanding API </a>,
+                                and then displays that score on the player card. The score ranges from -1 to 1, with -1 being the most negative and 1 being the most positve.
+                            </li>
+                            <li>
+                                Users can refresh the 
+                                information on a player card at any time, save cards to their favorites, and publish cards to the explore page for all other users to see. Users can also 
+                                change their display name which is attributed to the cards they publish. 
+                            </li>
+                            <li>
+                                Non logged in users can only view the explore page, while admin users have all the priveleges of 
+                                logged-in users along with the ability to see all login records from their profile page.
+                            </li>
+                            <li>
+                                When changes are made on the frotend, a frontend data store calls the backend server
+                                which in turns calls the respective external APIs if neccesary and then sends data to the backend data store so the database is updated. The changes to the database are then returned
+                                to the frontend data store which the Vue app responsively reads from. 
+                            </li>
+                        </ul>
+                             
+                    </div>
+                </div>
+            <hr>
+            <br>
+            <h3>Project Attributions</h3>
+            <div class = "welcome">
+            <br>
+                <ul>
+                    <li>
+                        Libraries Used: 
+                        <ul>
+                            <li>
+                                <a href="https://github.com/SortableJS/Vue.Draggable">Vue Draggable-</a> Draggable served as an excellent way to add another level of interaction and depth with the UI, allowing users to organize the cards
+                                and comments they make to best suit their needs.
+                            </li>
+                            <li>
+                                <a href="https://www.npmjs.com/package/uuid">uuid-</a> In addition to the random keys generated from Firebase, I needed another layer of random generation
+                                and uuid effectively made sure I did not add duplicate elements when I did not want to.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Data Sources & Assets:
+                        <ul>
+                            <li>
+                                <a href="https://stackoverflow.com/questions/30079558/npm-install-packagename-save-dev-not-updating-package-json">npm help</a>
+                            <li>
+                                <a href="https://stackoverflow.com/questions/13756055/why-cant-i-push-this-up-to-date-git-subtree">git help</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3schools.com/css/css_rwd_mediaqueries.asp">Responsive web design</a> 
+                            </li>
+                            <li>
+                                <a href="https://bootstrap-vue.org/docs/reference/color-variants">Bootstrap variants</a>
+                            </li>
+                            <li>
+                                <a href="https://getbootstrap.com/docs/4.0/components/forms/">Search Bar Styling</a>
+                            </li>
+                            <li>
+                                <a href="https://www.w3resource.com/javascript/form/all-letters-field.php">Filtering Only Alphabetical Characters</a>
+                            </li>
+                            <li>
+                                <a href="https://newrepublic.com/article/127237/nba-twitter-changing-way-watch-sports">Background project research</a>
+                            </li>
+                            <li>
+                                <a href="https://cassiuslife.com/playlist/paul-george-seth-curry-playoff-p/">Background project research</a>
+                            </li>
+                            <li>
+                                <a href="https://rapidapi.com/api-sports/api/api-nba/details">API-NBA</a>
+                            </li>
+                            <li>
+                                <a href="https://developer.twitter.com/en/docs/twitter-api">Twitter API </a>
+                            </li>
+                            <li>
+                                <a href="https://cloud.ibm.com/apidocs/natural-language-understanding">Natural Language Understanding API </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <br>
+            <h3>Project Links</h3>
+            <div class = "welcome">
+                <ul>
+                    <li>
+                        <a href="https://youtu.be/uj-dcMlJwJ8">Demo Video</a> 
+                    </li>
+                    <li>
+                        <a href="https://arcane-thicket-82518.herokuapp.com/api/get_data">JSON Data From Server</a>   
+                        <ul>
+                            <li>
+                                The data provided by the server at this link is only an example. Most of the data provided by the server when used by the web app
+                                is typically based on us parameters, and there is a lot more data stored in the data base - much of this data is user-specific, so I 
+                                chose to instead provide a link to some JSON data returned from the external API calls I make that drive the rest of the app.
+                                Here, the data shows the results of searching NBA players with the first name "Kevin," getting the stats of the player 
+                                "Kevin Durant," getting the tweets with "Kevin Durant" in them, and computing the average sentiment score for all of those tweets.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div> 
+</body>

@@ -1,0 +1,90 @@
+.app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+  }
+  
+  body {
+      /* background-color: #c2dde6 */
+      background-color: #bee0ec;
+
+  }
+
+  .welcome {
+      text-align: left;
+  }
+
+  @media only screen and (max-width: 834px) {
+    body {
+      background-color: beige;
+    }
+
+    @media only screen and (max-width: 400px) {
+        body {
+          background-color: lavender;
+        }
+      }
+  }
+
+   /* card based styles */
+  #card {
+       font-size: 15px;
+       list-style: none;
+       text-align: center;
+       color: lemonchiffon;
+       background-color: rgb(14, 109, 116);
+       box-sizing: border-box;
+       border-radius: 16px;
+       padding: 1rem;
+       padding-bottom: 2rem;
+       margin: 0 10px;
+       float: left;
+       margin-bottom: 20px;
+   }
+
+   #search {
+    background-color: #bee0ec;
+   }
+
+   #login-card {
+    background-color: #bee0ec;
+   }
+  
+  
+   .card-comments {
+     text-align: center;
+      list-style: none;
+      font-weight: normal;
+      text-align: left;
+      background-color:lemonchiffon;
+      box-sizing: border-box;
+      border-radius: 5px;
+      color: rgb(14, 109, 116);
+      margin: 5px -20px;
+      padding: 1rem;
+      width: 100%;
+      border: 1px solid #888;
+  }
+  .columns{
+    overflow-x: auto;
+  }
+  .br {
+  display: block;
+  margin-bottom: 0.5em;
+  }
+
+  
+footer{
+  background-color: #bee0ec;
+  text-align: center;
+  padding: 1px;      
+}
+
+#partialPageFooter{
+  background-color: #bee0ec;
+  position: absolute;
+  bottom: 0;
+  width: 100%;  
+}

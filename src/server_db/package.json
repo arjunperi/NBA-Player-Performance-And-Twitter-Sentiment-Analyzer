@@ -1,0 +1,28 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "scripts": {
+        "start": "nodemon index.js",
+        "serve": "heroku local web",
+        "deploy": "cd ../.. && git subtree push --prefix url_list/server heroku master",
+        "logs": "heroku logs --tail",
+        "local-only": "nodemon server.js --local-only",
+        "local-only-with-google-auth": "nodemon server.js --local-only-with-google-auth"
+    },
+    "dependencies": {
+        "cookie-session": "^1.4.0",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "firebase-admin": "^9.2.0",
+        "ibm-watson": "^6.0.4",
+        "morgan": "^1.10.0",
+        "morgan-body": "^2.6.5",
+        "node-fetch": "^2.6.1",
+        "nodemon": "^2.0.7",
+        "passport": "^0.4.1",
+        "passport-google-oauth20": "^2.0.0",
+        "passport-http": "^0.3.0",
+        "querystring": "^0.2.1",
+        "uuidv4": "^6.2.7"
+    }
+}

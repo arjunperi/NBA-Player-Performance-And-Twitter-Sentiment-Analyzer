@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Arjun Peri">
+    <title>Arjun Peri's CompSci 290 Home Page</title>
+    <!-- scale page to fit entire screen, so it properly fills non-desktop devices -->   
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- DEV-only for easier refreshing: stop the web browser from ever caching this page or its images -->
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+     <!-- load required Bootstrap and BootstrapVue CSS -->
+     <link rel="stylesheet" href="https://unpkg.com/bootstrap/dist/css/bootstrap.css" />
+     <link rel="stylesheet" href="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.css" />
+      <!-- load Vue followed by BootstrapVue -->
+    <script src="https://unpkg.com/vue@latest/dist/vue.js"></script>
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <!-- load the following for BootstrapVueIcons support -->
+    <script src="https://unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue-icons.js"></script>
+    <!-- style for this page -->
+    <link rel="stylesheet" href="../../style.css">
+  </head>
+
+<body>
+<header>
+    <h1 class = "center">Final Project Plan - NBA Player Analysis</h1>
+</header>
+<hr>
+<div>
+    <h2 class = "center">Idea</h2>
+    <div>
+        <ul>
+            <li>
+                Rapid technological developments over the last few decades have ushered in the era of social media, where almost 
+                all of our lives are influenced by the opinions and comments made public by those around us. Among those who are influenced
+                most are professional atheletes, with rich online communities consitently debating and discussing their performance 
+                both on and off the playing stage. One of the most active communities is that of NBA twitter, where praise is given, insults are thrown,
+                and viral remarks are made that <a href="https://bleacherreport.com/articles/2716427-kevin-durant-responds-to-multiple-trash-talking-fans-on-twitter">
+                warrant responses from the players themselves. </a> 
+            </li>
+            <li>
+                It is often said that NBA players' lives are much different now than they were before due to the advent of social media, and my final project 
+                aims to see how much of an impact online communities have on the lives and performances of NBA players.     
+            </li>
+            <li>
+                There are a plethora of existing websites that provide statistic - lookup capabilities, but my website will take this one step further by combining 
+                these statistics with sentiment analysis from the NBA twitter communities. This will enable users to view which players get the most
+                attention online, how positive or negative this attention might be, and how it correlates to their on-court performance. 
+            </li>
+        </ul>
+    </div>
+</div>
+<hr>
+<div>
+    <h2 class = "center">Scope</h2>
+    <ul>
+        <li>
+            My website will enable users to search NBA players and display their statistics, as well as an analysis of the conversations surrounding them 
+            on Twitter.
+        </li>
+        <li>
+            My website will enable users to search NBA players and display their statistics, as well as an analysis of the conversations surrounding them 
+            on Twitter.
+        </li>
+        <li>
+            For each player, users can filter the analysis by date (e.g if the user knows of a date where the player had a bad 
+            game and wants to see how the twitter community reacted or vice versa), by sentiment analysis threshholds (e.g if the 
+            user wants to see how the worst/best day of twitter opinions affected their performance without knowing a specific date), or by 
+            performance threshholds (e.g if the users want to see how the worst/best on court performances affected twitter opinions
+            without knowing a specific date).
+        </li>
+        <li>
+            In addition, users will be able to add players to their favorites list for quicker access. 
+        </li>
+        <li>
+            Users will be able to display multiple users on the screen at once to enable comparisons. 
+        </li>
+        <li>
+            The server will thus be responsible for loading player statistics and tweets regarding that player, as well performing 
+            a sentiment analysis using AI.
+        </li>
+        <li>
+            Optionally, I hope to allow for saving certain analyses (e.g the analyses shown for a certain date), provide some sort 
+            of algorithm that gives a score or metric correlating the Twitter analysis to the player performance, and support analyses
+            of ex-NBA players based on the current discussion about them on Twiter and showing how this might have affected their stats. Lastly, 
+            I would like to display some sort of graph or visualization to show the aformentioned correlation.
+        </li>
+        <li>
+            In terms of technologies, I plan on using Vue/Bootstrap Vue, either Firebase or MongoDB, the IBM Watson API, Twitter API,
+            and balldontlie API.
+        </li>
+    </ul>
+</div>
+<hr>
+<div>
+    <h2 class = "center">Data Sources</h2>
+    <h4 class  = "center">Twitter API</h4>
+    <div class="center">
+        The Twitter API will be used to collect data on tweets surrounding each NBA player that the user selects. This API provides 
+        data in JSON format, with easy-to-query object keys. Here is an example of a default Tweet object:
+        <div>
+            <img src="./plan_images/Screen Shot 2021-03-24 at 11.09.24 PM.png" alt="Twitter API JSON Data Example">
+            <figcaption>Twitter API JSON Data Example</figcaption>
+        </div>
+    </div>
+    <hr>
+    <h4 class = "center">IBM Watson API</h4>
+    <div class = "center">
+        The IBM Watson Natural Language Understanding API will be used to perform sentiment analysis on the Twitter data that is collected.
+        This API provides data in JSON format, with a sentiment score and data on emotions, concepts, categories, and more. Here is an example
+        of the JSON data that is returned:
+        <div>
+            <img src="./plan_images/Screen Shot 2021-03-24 at 9.23.43 PM.png" alt="IBM Watson API JSON Data Example">
+            <figcaption>IBM Watson NLU API JSON Data Example</figcaption>
+        </div>
+    </div>
+    <hr>
+    <h4 class = "center">nbasense API</h4>
+    <div class = "center">
+        The balldontlie API will be used to collect stats on NBA players. The data is updated every 10 minutes, and it also provides JSON 
+        formatting. Here is an example of the JSON data that is returned:
+        <img src="./plan_images/Screen Shot 2021-03-24 at 9.48.08 PM.png" alt="balldontlie API JSON Data Example">
+        <figcaption>balldontlie.io API JSON Data Example</figcaption>
+    </div>
+    <div>    
+    </div>
+</div>
+<hr>
+<div>
+    <h2 class = "center">Data Structure</h2>
+    <div class = "center">
+        My data structure will be supported by a Firebase or MongoDB database and will hold all the external data that is fetched along 
+        with the website formulated data and user data such as favorites, saved statistics, etc. 
+    </div>
+</div>
+<hr>
+<div>
+    <h2 class = "center">Wireframe</h2>
+    <div class = "center">
+        Basic wirefame mockup that shows nav bar for user options, as well as rough draft of the player cards that will display stats
+        along with sentiment analysis. As shown, users can search for players and display mutliple player cards on the screen at once
+        for easy comparison. In addition, player cards have filtering options so users can see the data as they desire.
+        <img src="./plan_images/Screen Shot 2021-03-24 at 10.50.00 PM.png" alt="balldontlie API JSON Data Example">
+        <figcaption>Wireframe</figcaption>
+    </div>
+</div>
+<hr>
+<div>
+    <h2 class = "center">Schedule</h2>
+    <ul>
+        <li>
+            April 8: 
+            <ul>
+                <li>
+                    Set up and finalize data structure and database.
+                </li>
+                <li>
+                    Begin working with API's and fetching JSON data. 
+                </li>
+                <li>
+                    Decide which optional features are more feasible to implement given initial strucure. 
+                </li>
+            </ul>   
+        </li>
+        <li>
+            April 15:
+            <ul>
+                <li>
+                    Set up player search functionality.
+                </li>
+                <li>
+                    Implement user options (saving, logging in, etc).
+                </li>
+                <li>
+                    Set up player card with stats.
+                </li>
+            </ul>   
+        </li>
+        <li>
+            April 22:
+            <ul>
+                <li>
+                    Finish player card by adding sentiment analysis.
+                </li>
+                <li>
+                    Focus on styling the page. 
+                </li>
+                <li>
+                    Begin working on optional features that were decided to be most feasible. 
+                </li>
+            </ul>   
+        </li>
+        <li>
+            April 28:
+            <ul>
+                <li>
+                    Try to make the correlation between stats and sentiment analysis more sophisticated.
+                </li>
+                <li>
+                    Work on more optional features. 
+                </li>
+                <li>
+                    Bug fixes and styling.
+                </li>
+                
+            </ul>   
+        </li>
+    </ul>
+</div>
+<hr>
+
+
+
+<footer>
+  <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
+    <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" id = "rights" />
+  </a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+</footer>
+
+</body>
+</html> 

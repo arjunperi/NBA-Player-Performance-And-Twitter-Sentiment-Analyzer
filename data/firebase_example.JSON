@@ -1,0 +1,414 @@
+{
+    "data" : {
+      "createPlayerCards" : {
+        "-MZGIQErDu-AYTl6-QO0" : {
+          "apiID" : "265",
+          "cardID" : "2309f642-1f6b-4a6c-8ea5-b0818680893c",
+          "comments" : {
+            "-MZKUgeFJPbvBwMsSSn9" : {
+              "keyID" : "-MZKUgeFJPbvBwMsSSn9",
+              "text" : "sdc"
+            },
+            "-MZLrgplA9AxWSoH4nK7" : {
+              "keyID" : "-MZLrgplA9AxWSoH4nK7",
+              "text" : "cool"
+            }
+          },
+          "keyID" : "-MZGIQErDu-AYTl6-QO0",
+          "name" : "LeBron James",
+          "score" : -0.4106,
+          "stats" : {
+            "assists" : 8.3,
+            "blk" : 0.7,
+            "dreb" : 7.1,
+            "fgp" : 52.5,
+            "ftp" : 68.4,
+            "minutes" : "35:44",
+            "oreb" : 1.2,
+            "plsmin" : 5.2,
+            "points" : 26.4,
+            "reb" : 8.2,
+            "stl" : 1.3,
+            "tov" : 3.8
+          },
+          "time" : "2021-4-27 18:40:17",
+          "userID" : "-MZFjiEtows1wlNy-KMh"
+        },
+        "-MZGqg3acHBIRexOstia" : {
+          "apiID" : "160",
+          "cardID" : "904512e7-d53c-400c-9952-bd0843246de5",
+          "keyID" : "-MZGqg3acHBIRexOstia",
+          "name" : "James Ennis III",
+          "stats" : {
+            "assists" : 1,
+            "blk" : 0.3,
+            "dreb" : 2.4,
+            "fgp" : 43.5,
+            "ftp" : 42.8,
+            "minutes" : "21:4",
+            "oreb" : 1.1,
+            "plsmin" : -0.6,
+            "points" : 7.1,
+            "reb" : 3.5,
+            "stl" : 0.7,
+            "tov" : 0.8
+          },
+          "time" : "2021-4-27 1:43:39",
+          "userID" : "-MZGqUbHLCxm4K25LIVU"
+        },
+        "-MZJWFGeNVfagRDiGE9n" : {
+          "apiID" : "275",
+          "cardID" : "74f8be47-3513-47a7-a291-a018380653f4",
+          "comments" : {
+            "-MZJu6bHblZzWEpqDZ2k" : {
+              "keyID" : "-MZJu6bHblZzWEpqDZ2k",
+              "text" : "ok?"
+            }
+          },
+          "keyID" : "-MZJWFGeNVfagRDiGE9n",
+          "name" : "Joe Johnson",
+          "score" : 0.13512463157894739,
+          "stats" : {
+            "assists" : 2.4,
+            "blk" : 0.1,
+            "dreb" : 2.9,
+            "fgp" : 40.5,
+            "ftp" : 40.3,
+            "minutes" : "26:22",
+            "oreb" : 0.4,
+            "plsmin" : -0.4,
+            "points" : 9.5,
+            "reb" : 3.3,
+            "stl" : 0.5,
+            "tov" : 1.3
+          },
+          "time" : "2021-4-27 15:54:49",
+          "userID" : "alice"
+        },
+        "-MZJzboGXumEfnSYJuz4" : {
+          "apiID" : "265",
+          "cardID" : "4a890a1e-d47f-4352-b49e-e23d5b62e12b",
+          "keyID" : "-MZJzboGXumEfnSYJuz4",
+          "name" : "LeBron James",
+          "stats" : {
+            "assists" : 8.3,
+            "blk" : 0.7,
+            "dreb" : 7.1,
+            "fgp" : 52.5,
+            "ftp" : 68.4,
+            "minutes" : "35:44",
+            "oreb" : 1.2,
+            "plsmin" : 5.2,
+            "points" : 26.4,
+            "reb" : 8.2,
+            "stl" : 1.3,
+            "tov" : 3.8
+          },
+          "time" : "2021-4-27 16:21:33",
+          "userID" : "-MZJynqZjmKqncpwB0k9"
+        },
+        "-MZKbRw2PObPgdnkNOb8" : {
+          "apiID" : "140",
+          "cardID" : "8e52aeca-482f-4f0b-8ecb-a13e77f2b4db",
+          "keyID" : "-MZKbRw2PObPgdnkNOb8",
+          "name" : "John DiBartolomeo",
+          "score" : 0,
+          "stats" : {
+            "assists" : 3,
+            "blk" : 0,
+            "dreb" : 0,
+            "fgp" : 27,
+            "ftp" : 25,
+            "minutes" : "20:33",
+            "oreb" : 0.5,
+            "plsmin" : -23.5,
+            "points" : 4,
+            "reb" : 0.5,
+            "stl" : 2.5,
+            "tov" : 1
+          },
+          "time" : "2021-4-27 19:15:37",
+          "userID" : "-MZFjiEtows1wlNy-KMh"
+        },
+        "-MZKbtnEMGFxwEmQn0Ls" : {
+          "apiID" : "153",
+          "cardID" : "3bb1f389-6ac7-479e-b90e-3abd721ebaf4",
+          "comments" : {
+            "-MZLpGrldA9cbHZEn5LX" : {
+              "keyID" : "-MZLpGrldA9cbHZEn5LX",
+              "text" : "dope"
+            }
+          },
+          "keyID" : "-MZKbtnEMGFxwEmQn0Ls",
+          "name" : "Kevin Durant",
+          "score" : -0.2972,
+          "stats" : {
+            "assists" : 5,
+            "blk" : 1.3,
+            "dreb" : 6.6,
+            "fgp" : 52.6,
+            "ftp" : 85.1,
+            "minutes" : "34:22",
+            "oreb" : 0.5,
+            "plsmin" : 8.5,
+            "points" : 26.6,
+            "reb" : 7.1,
+            "stl" : 0.9,
+            "tov" : 2.9
+          },
+          "time" : "2021-4-27 19:49:37",
+          "userID" : "-MZFjiEtows1wlNy-KMh"
+        }
+      },
+      "errorMessages" : {
+        "displayNameTaken" : 0
+      },
+      "explorePlayerCards" : {
+        "-MZKUhZj0eJvpqYuzEZf" : {
+          "apiID" : "265",
+          "cardID" : "2309f642-1f6b-4a6c-8ea5-b0818680893c",
+          "comments" : {
+            "-MZKUgeFJPbvBwMsSSn9" : {
+              "keyID" : "-MZKUgeFJPbvBwMsSSn9",
+              "text" : "we"
+            }
+          },
+          "displayName" : "arjun",
+          "keyID" : "-MZKUhZj0eJvpqYuzEZf",
+          "name" : "LeBron James",
+          "score" : -0.4106,
+          "stats" : {
+            "assists" : 8.3,
+            "blk" : 0.7,
+            "dreb" : 7.1,
+            "fgp" : 52.5,
+            "ftp" : 68.4,
+            "minutes" : "35:44",
+            "oreb" : 1.2,
+            "plsmin" : 5.2,
+            "points" : 26.4,
+            "reb" : 8.2,
+            "stl" : 1.3,
+            "tov" : 3.8
+          },
+          "time" : "2021-4-27 18:40:17",
+          "userID" : "-MZFjiEtows1wlNy-KMh"
+        }
+      },
+      "favoritePlayerCards" : {
+        "-MZJu7KCRlHT6rx3uuVZ" : {
+          "apiID" : "275",
+          "cardID" : "74f8be47-3513-47a7-a291-a018380653f4",
+          "comments" : {
+            "-MZJu6bHblZzWEpqDZ2k" : {
+              "keyID" : "-MZJu6bHblZzWEpqDZ2k",
+              "text" : "ok dope"
+            }
+          },
+          "keyID" : "-MZJu7KCRlHT6rx3uuVZ",
+          "name" : "Joe Johnson",
+          "score" : 0.13512463157894739,
+          "stats" : {
+            "assists" : 2.4,
+            "blk" : 0.1,
+            "dreb" : 2.9,
+            "fgp" : 40.5,
+            "ftp" : 40.3,
+            "minutes" : "26:22",
+            "oreb" : 0.4,
+            "plsmin" : -0.4,
+            "points" : 9.5,
+            "reb" : 3.3,
+            "stl" : 0.5,
+            "tov" : 1.3
+          },
+          "time" : "2021-4-27 15:54:49",
+          "userID" : "alice"
+        },
+        "-MZKUh1D1nldcVAva558" : {
+          "apiID" : "265",
+          "cardID" : "2309f642-1f6b-4a6c-8ea5-b0818680893c",
+          "comments" : {
+            "-MZKUgeFJPbvBwMsSSn9" : {
+              "keyID" : "-MZKUgeFJPbvBwMsSSn9",
+              "text" : "we"
+            }
+          },
+          "keyID" : "-MZKUh1D1nldcVAva558",
+          "name" : "LeBron James",
+          "score" : -0.4106,
+          "stats" : {
+            "assists" : 8.3,
+            "blk" : 0.7,
+            "dreb" : 7.1,
+            "fgp" : 52.5,
+            "ftp" : 68.4,
+            "minutes" : "35:44",
+            "oreb" : 1.2,
+            "plsmin" : 5.2,
+            "points" : 26.4,
+            "reb" : 8.2,
+            "stl" : 1.3,
+            "tov" : 3.8
+          },
+          "time" : "2021-4-27 18:40:17",
+          "userID" : "-MZFjiEtows1wlNy-KMh"
+        },
+        "-MZLtCicdSCsrGwFCejP" : {
+          "apiID" : "140",
+          "cardID" : "8e52aeca-482f-4f0b-8ecb-a13e77f2b4db",
+          "keyID" : "-MZLtCicdSCsrGwFCejP",
+          "name" : "John DiBartolomeo",
+          "score" : 0,
+          "stats" : {
+            "assists" : 3,
+            "blk" : 0,
+            "dreb" : 0,
+            "fgp" : 27,
+            "ftp" : 25,
+            "minutes" : "20:33",
+            "oreb" : 0.5,
+            "plsmin" : -23.5,
+            "points" : 4,
+            "reb" : 0.5,
+            "stl" : 2.5,
+            "tov" : 1
+          },
+          "time" : "2021-4-27 19:15:37",
+          "userID" : "-MZFjiEtows1wlNy-KMh"
+        }
+      },
+      "loginRecords" : {
+        "-MZKNCxAlMDEHDNbu6Hd" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 18:9:0"
+        },
+        "-MZKPUtFIvn9dBUZ5LtF" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 18:18:58"
+        },
+        "-MZKPXBeoHyYRi0kco1U" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 18:19:7"
+        },
+        "-MZKUL17YO86s-yts6Rz" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 18:40:8"
+        },
+        "-MZKZpcGJZ1MCbn605yB" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 19:4:8"
+        },
+        "-MZK__XmanC8DPVXW0pX" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 19:7:25"
+        },
+        "-MZKd19g1pgj1GsmJ6Cj" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 19:22:28"
+        },
+        "-MZKed6Xd57EzcU2C-BA" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 19:29:30"
+        },
+        "-MZKnCgqkSLc9ZCBwC5P" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:6:57"
+        },
+        "-MZKnoB-0qEiSK9Rzsx5" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:9:35"
+        },
+        "-MZKnvJysS3exR6xVd7G" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:10:4"
+        },
+        "-MZKoej-TySIw2QEhtVn" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:13:18"
+        },
+        "-MZKov7eZMb-4eXUczdd" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:14:25"
+        },
+        "-MZKpZd5qJ1AoqX-06JA" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:17:15"
+        },
+        "-MZKtAkk2AnaJhOI9FON" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:33:2"
+        },
+        "-MZKuj1CZenywtu2GN2x" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:39:49"
+        },
+        "-MZKuw4OIE4khZwL7zip" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:40:42"
+        },
+        "-MZKuzEeSDv5ADHWKGAB" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:40:55"
+        },
+        "-MZKzAdYoeLNgyiN6HIm" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 20:59:14"
+        },
+        "-MZLE2diITpBBQCTq_Be" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 22:8:36"
+        },
+        "-MZLapdWK9ABkEpT4eaO" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-27 23:52:30"
+        },
+        "-MZLe8xEryPZXcrASFZW" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 0:7:0"
+        },
+        "-MZLkjEA7kLC5oiXhUgS" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 0:35:45"
+        },
+        "-MZLkj_Jjc3Z_JqAIlnw" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 0:35:47"
+        },
+        "-MZLtXmoafDVbK5ollK3" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 1:14:14"
+        },
+        "-MZM8QR73UR1z0KiFNtS" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 2:23:38"
+        },
+        "-MZM8eP8u_xkyzT8VZYF" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 2:24:39"
+        },
+        "-MZM8frXYCfxGoQpAdJI" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 2:24:45"
+        },
+        "-MZM8lyvyX1VF4y-mC46" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 2:25:10"
+        },
+        "-MZMJZTHn_FPP0H-Zi6N" : {
+          "email" : "arjun.peri55@gmail.com",
+          "time" : "2021-4-28 3:12:18"
+        }
+      },
+      "users" : {
+        "-MZFjiEtows1wlNy-KMh" : {
+          "displayName" : "arjun",
+          "email" : "arjun.peri55@gmail.com",
+          "id" : "-MZFjiEtows1wlNy-KMh",
+          "isAdmin" : true,
+          "photo" : "https://lh4.googleusercontent.com/-tWUFZWwqRmw/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucmsJbFLKpkRrMHhrGgjjQlJ6HlPwg/s96-c/photo.jpg"
+        }
+      }
+    }
+  }
+  
