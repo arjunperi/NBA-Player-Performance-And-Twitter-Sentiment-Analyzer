@@ -1,4 +1,4 @@
-# NBA Player Performance Statistics & Twitter Sentiment Analysis
+# NBA Player Sentiment Analysis & Statistics Comparator
 
 This project combines NBA, Twitter, and IBM Watson APIs to contrast NBA statistics with Twitter Sentiment analysis for players. 
 
